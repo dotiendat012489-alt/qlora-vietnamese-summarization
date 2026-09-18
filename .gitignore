@@ -1,0 +1,25 @@
+data/raw/
+data/processed/
+checkpoints/
+*.gguf
+*.safetensors
+wandb/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Cấu hình/công cụ local, không cần thiết cho người khác đọc code
+.claude/
+.vscode/
+
+# Nhật ký kỹ thuật/đề cương cá nhân - không đăng công khai
+docs/
+
+# reports/: chỉ giữ lại số liệu đánh giá + biểu đồ loss - các file còn lại
+# (log chạy, spot-check, ví dụ định tính) chứa nguyên văn bài báo VietNews
+# (dataset nghiên cứu) hoặc chỉ là log runtime, không cần thiết để xem kết quả
+reports/*
+!reports/evaluation_results.json
+!reports/evaluation_results_detailed.json
+!reports/training_loss.png
+!reports/training_log_history.json
